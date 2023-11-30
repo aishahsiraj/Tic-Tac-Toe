@@ -14,6 +14,17 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Tic Tac Toe")
+            LazyVGrid(columns: Array(repeating: GridItem(.fixed(120), spacing: 15), count: 3), spacing: 15) {
+                Text("X")
+                Text("X")
+                Text("X")
+                Text("X")
+                Text("X")
+                Text("X")
+                Text("X")
+                Text("X")
+                Text("X")
+            }
         }
         .preferredColorScheme(.dark)
         
